@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="collection_title">Collection</title>
+  <link rel="alternate" hreflang="en" href="./collection.html?lang=en" />
+  <link rel="alternate" hreflang="sk" href="./collection.html?lang=sk" />
+  <link rel="alternate" hreflang="de" href="./collection.html?lang=de" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">AntiqueBooks</a>
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="nav_home">HOME</a>
+        <a href="about.html" data-i18n="nav_about">ABOUT</a>
+        <a href="gallery.html" data-i18n="nav_gallery">GALLERY</a>
+        <a class="active" href="collection.html" data-i18n="nav_collection">COLLECTION</a>
+        <a href="contact.html" data-i18n="nav_contact">CONTACT</a>
+      </nav>
+      <div class="utility">
+        <select id="langSwitcher" aria-label="Language switcher">
+          <option value="en">EN</option>
+          <option value="sk">SK</option>
+          <option value="de">DE</option>
+        </select>
+        <a href="shop.html" class="shop-link" data-i18n="nav_shop">Shop</a>
+        <a href="account/login.html" class="account-link" data-i18n="nav_account">Account</a>
+        <a href="cart.html" class="cart-link">Cart (<span id="cartCount">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 id="pageTitle" data-i18n="collection_title">Collection</h1>
+
+    <div class="filters">
+      <label data-i18n="filter_sort">Sort</label>
+      <select id="sortSelect">
+        <option value="default">Recommended</option>
+        <option value="price_asc" data-i18n="sort_price_asc">Price — low to high</option>
+        <option value="price_desc" data-i18n="sort_price_desc">Price — high to low</option>
+        <option value="date_desc" data-i18n="sort_date_desc">Newest</option>
+      </select>
+
+      <label data-i18n="filter_cat">Category</label>
+      <select id="categorySelect"><option value="">All</option></select>
+      <input id="searchInput" placeholder="" data-i18n-placeholder="search_placeholder"/>
+    </div>
+
+    <div id="collectionGrid" class="grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="col">
+        <strong>AntiqueBooks</strong>
+      </div>
+      <div class="col">
+        <h4 data-i18n="footer_links">Quick links</h4>
+      </div>
+      <div class="col">
+        <h4 data-i18n="footer_news">Newsletter</h4>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

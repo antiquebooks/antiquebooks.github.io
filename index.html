@@ -1,1 +1,86 @@
-TEST
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="site_title">Antique Books — Home</title>
+  <meta name="description" content="High-end antique book store" />
+  <!-- Hreflang entries (point to the same page with lang query for this static starter) -->
+  <link rel="alternate" hreflang="en" href="./index.html?lang=en" />
+  <link rel="alternate" hreflang="sk" href="./index.html?lang=sk" />
+  <link rel="alternate" hreflang="de" href="./index.html?lang=de" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">AntiqueBooks</a>
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="nav_home">HOME</a>
+        <a href="about.html" data-i18n="nav_about">ABOUT</a>
+        <a href="gallery.html" data-i18n="nav_gallery">GALLERY</a>
+        <a href="collection.html" data-i18n="nav_collection">COLLECTION</a>
+        <a href="contact.html" data-i18n="nav_contact">CONTACT</a>
+      </nav>
+      <div class="utility">
+        <select id="langSwitcher" aria-label="Language switcher">
+          <option value="en">EN</option>
+          <option value="sk">SK</option>
+          <option value="de">DE</option>
+        </select>
+        <a href="shop.html" class="shop-link" data-i18n="nav_shop">Shop</a>
+        <a href="account/login.html" class="account-link" data-i18n="nav_account">Account</a>
+        <a href="cart.html" class="cart-link">Cart (<span id="cartCount">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 data-i18n="hero_title">Curated Rare & Antique Books</h1>
+        <p data-i18n="hero_sub">A carefully selected collection with condition notes, provenance and research-ready imagery.</p>
+        <a href="collection.html" class="cta" data-i18n="hero_cta">Browse Collection</a>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h2 data-i18n="featured_title">Featured Items</h2>
+      <div id="featuredGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="col">
+        <strong>AntiqueBooks</strong>
+        <p data-i18n="footer_address">Bratislava, Slovakia</p>
+      </div>
+      <div class="col">
+        <h4 data-i18n="footer_links">Quick links</h4>
+        <ul>
+          <li><a href="terms.html" data-i18n="footer_terms">Terms</a></li>
+          <li><a href="authenticity.html" data-i18n="footer_auth">Authenticity</a></li>
+          <li><a href="shipping.html" data-i18n="footer_ship">Shipping</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 data-i18n="footer_news">Newsletter</h4>
+        <form id="newsletterForm">
+          <input type="email" id="newsletterEmail" placeholder="you@example.com" />
+          <button type="submit" data-i18n="footer_subscribe">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="year"></span> AntiqueBooks — <span data-i18n="footer_copyright">All rights reserved</span></small>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    // set current year
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>

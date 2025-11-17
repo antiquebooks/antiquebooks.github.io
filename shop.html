@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="shop_title">Shop</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">AntiqueBooks</a>
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="nav_home">HOME</a>
+        <a href="collection.html" data-i18n="nav_collection">COLLECTION</a>
+      </nav>
+      <div class="utility">
+        <select id="langSwitcher" aria-label="Language switcher">
+          <option value="en">EN</option>
+          <option value="sk">SK</option>
+          <option value="de">DE</option>
+        </select>
+        <a href="cart.html" class="cart-link">Cart (<span id="cartCount">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 data-i18n="shop_title">Shop</h1>
+    <div id="shopGrid" class="grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="col"><strong>AntiqueBooks</strong></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

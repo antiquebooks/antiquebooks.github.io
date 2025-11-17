@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="checkout_title">Checkout</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner"><a class="logo" href="index.html">AntiqueBooks</a></div>
+  </header>
+
+  <main class="container">
+    <h1 data-i18n="checkout_title">Checkout</h1>
+    <p data-i18n="checkout_notice">This starter implements a client-side checkout form. For secure processing, integrate Stripe/Shopify/your gateway and server-side fulfillment.</p>
+
+    <form id="checkoutForm">
+      <h3 data-i18n="shipping">Shipping</h3>
+      <label data-i18n="label_fullname">Full name</label>
+      <input name="fullname" required />
+      <label data-i18n="label_address">Address</label>
+      <input name="address" required />
+      <label data-i18n="label_email">Email</label>
+      <input name="email" type="email" required />
+      <h3 data-i18n="payment">Payment</h3>
+      <p data-i18n="payment_notice">Placeholder: connect Stripe Elements or redirect to Shopify Checkout.</p>
+      <button class="btn primary" type="submit" data-i18n="submit_order">Submit Order</button>
+    </form>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

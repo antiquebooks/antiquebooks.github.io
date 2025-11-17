@@ -1,0 +1,41 @@
+[
+  {
+    "id": "baudelaire-1857",
+    "title": { "en": "Les Fleurs du Mal (1857)", "sk": "Les Fleurs du Mal (1857)", "de": "Les Fleurs du Mal (1857)" },
+    "author": "Charles Baudelaire",
+    "year": "1857",
+    "category": "fiction",
+    "price": 4200,
+    "currency": "EUR",
+    "status": "available",
+    "images": [
+      "assets/images/baudelaire-cover.jpg",
+      "assets/images/baudelaire-spine.jpg"
+    ],
+    "description": {
+      "en": "<p>First edition, second state. Leather binding, gilt edges, small foxing on prelims.</p>",
+      "sk": "<p>Prvé vydanie, druhý stav. Kožená väzba, pozlátené strany, mierne škvny na frontových stranách.</p>",
+      "de": "<p>Erstausgabe, zweiter Zustand. Lederbindung, vergoldete Schnittkanten, leichte Stockflecken.</p>"
+    },
+    "featured": true
+  },
+  {
+    "id": "map-1780",
+    "title": { "en": "Map of Central Europe (1780)", "sk": "Mapa strednej Európy (1780)", "de": "Karte Mitteleuropa (1780)" },
+    "author": "Unknown",
+    "year": "1780",
+    "category": "old-prints",
+    "price": 950,
+    "currency": "EUR",
+    "status": "sold",
+    "images": [
+      "assets/images/map-1780.jpg"
+    ],
+    "description": {
+      "en": "<p>Hand-colored copperplate map. Minor tears on margins, original hand-coloring.</p>",
+      "sk": "<p>Ručne kolorovaná medená rytina. Menšie trhlinky na okrajoch.</p>",
+      "de": "<p>Handkolorierte Kupferstichkarte. Kleine Einrisse am Rand.</p>"
+    },
+    "featured": true
+  }
+]

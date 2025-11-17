@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="contact_title">Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner"><a class="logo" href="index.html">AntiqueBooks</a></div>
+  </header>
+
+  <main class="container contact">
+    <h1 data-i18n="contact_title">Contact</h1>
+    <form id="contactForm">
+      <label data-i18n="label_name">Name</label><input name="name" required/>
+      <label data-i18n="label_email">Email</label><input name="email" type="email" required/>
+      <label data-i18n="label_message">Message</label><textarea name="message" required></textarea>
+      <button class="btn primary" type="submit" data-i18n="send">Send</button>
+    </form>
+    <p data-i18n="contact_info">Email: info@example.com • Phone: +421 123 456</p>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

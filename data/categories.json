@@ -1,0 +1,18 @@
+[
+  {
+    "id": "signatures",
+    "title": { "en": "Signatures", "sk": "Podpisy", "de": "Signaturen" }
+  },
+  {
+    "id": "old-prints",
+    "title": { "en": "Old Prints", "sk": "Staré tlače", "de": "Alte Drucke" }
+  },
+  {
+    "id": "judaica",
+    "title": { "en": "Judaica", "sk": "Judaica", "de": "Judaica" }
+  },
+  {
+    "id": "fiction",
+    "title": { "en": "Fiction and Poetry", "sk": "Beletria a poézia", "de": "Belletristik und Poesie" }
+  }
+]

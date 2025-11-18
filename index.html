@@ -9,20 +9,26 @@
   <link rel="alternate" hreflang="en" href="./index.html?lang=en" />
   <link rel="alternate" hreflang="sk" href="./index.html?lang=sk" />
   <link rel="alternate" hreflang="de" href="./index.html?lang=de" />
+
+  <!-- Fonts: serif for headings, sans for UI -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body class="site-root">
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html">AntiqueBooks</a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html" data-i18n="nav_home">HOME</a>
         <a href="about.html" data-i18n="nav_about">ABOUT</a>
         <a href="gallery.html" data-i18n="nav_gallery">GALLERY</a>
         <a href="collection.html" data-i18n="nav_collection">COLLECTION</a>
         <a href="contact.html" data-i18n="nav_contact">CONTACT</a>
       </nav>
-      <div class="utility">
+      <div class="utility" role="region" aria-label="Utility menu">
         <select id="langSwitcher" aria-label="Language switcher">
           <option value="en">EN</option>
           <option value="sk">SK</option>
@@ -30,17 +36,26 @@
         </select>
         <a href="shop.html" class="shop-link" data-i18n="nav_shop">Shop</a>
         <a href="account/login.html" class="account-link" data-i18n="nav_account">Account</a>
-        <a href="cart.html" class="cart-link">Cart (<span id="cartCount">0</span>)</a>
+        <a href="cart.html" class="cart-link" aria-live="polite">Cart (<span id="cartCount">0</span>)</a>
       </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <!-- Replace this with a subtle, high-res hero image: assets/images/hero.jpg -->
+        <img src="assets/images/hero.jpg" alt="" />
+      </div>
       <div class="container hero-inner">
-        <h1 data-i18n="hero_title">Curated Rare & Antique Books</h1>
-        <p data-i18n="hero_sub">A carefully selected collection with condition notes, provenance and research-ready imagery.</p>
-        <a href="collection.html" class="cta" data-i18n="hero_cta">Browse Collection</a>
+        <div class="hero-copy">
+          <h1 data-i18n="hero_title">Curated Rare & Antique Books</h1>
+          <p class="lead" data-i18n="hero_sub">A carefully selected collection with condition notes, provenance and research-ready imagery.</p>
+          <div class="hero-actions">
+            <a href="collection.html" class="btn primary large" data-i18n="hero_cta">Browse Collection</a>
+            <a href="about.html" class="btn ghost" data-i18n="nav_about">Learn More</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -52,11 +67,11 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="col">
-        <strong>AntiqueBooks</strong>
-        <p data-i18n="footer_address">Bratislava, Slovakia</p>
+      <div class="col brand">
+        <a class="logo" href="index.html">AntiqueBooks</a>
+        <p class="muted" data-i18n="footer_address">Bratislava, Slovakia</p>
       </div>
-      <div class="col">
+      <div class="col links">
         <h4 data-i18n="footer_links">Quick links</h4>
         <ul>
           <li><a href="terms.html" data-i18n="footer_terms">Terms</a></li>
@@ -64,11 +79,11 @@
           <li><a href="shipping.html" data-i18n="footer_ship">Shipping</a></li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col newsletter">
         <h4 data-i18n="footer_news">Newsletter</h4>
-        <form id="newsletterForm">
-          <input type="email" id="newsletterEmail" placeholder="you@example.com" />
-          <button type="submit" data-i18n="footer_subscribe">Subscribe</button>
+        <form id="newsletterForm" class="newsletter-form" aria-label="Subscribe to newsletter">
+          <input type="email" id="newsletterEmail" placeholder="you@example.com" aria-label="Email address" />
+          <button type="submit" class="btn small" data-i18n="footer_subscribe">Subscribe</button>
         </form>
       </div>
     </div>
